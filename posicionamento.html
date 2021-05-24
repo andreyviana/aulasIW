@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entendendo o Position</title>
+</head>
+<style type="text/css">
+
+	.fixo{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		background-color: yellow;
+
+	}
+
+	.main{
+		margin-top: 8%;
+
+	}
+
+	.container{
+		position: relative;
+		background-color: red;
+		width: 100%;
+		height: 1220px;
+		text-align: center;
+	}
+
+	.topoesquerda{
+		position: absolute;
+		top: 16px;
+		left: 16px;
+		font-size: 18px;
+		width: 20%;
+		background-color: brown;
+	}
+
+	.topodireita{
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		font-size: 18px;
+		width: 20%;
+		background-color: brown;
+	}
+
+	.abaixoesquerda{
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+		font-size: 18px;
+		width: 20%;
+		background-color: brown;
+	}
+
+	.abaixodireita{
+		position: absolute;
+		bottom: 8px;
+		right: 16px;
+		font-size: 18px;
+		width: 20%;
+		background-color: brown;
+	}
+
+	.centro{
+		position: absolute;
+		top: 50%;
+		right: 16px;
+		font-size: 18px;
+		width: 20%;
+		background-color: brown;
+		margin-right: 40%;
+	}
+	
+	img{
+		width: 100%;
+		height: 1220px;
+
+	}
+
+</style>
+<body>
+	<header class="fixo">
+		<h1>Testando Posicionamento</h1>
+	</header>
+	<div class="main">
+		<h1>Teste...</h1>
+		<div class="container">
+			<img src="img/defundo.jpg">
+			<div class="topoesquerda">Superior esquerdo</div>
+			<div class="topodireita">Superior direito</div>
+			<div class="abaixoesquerda">Inferior esquerdo</div>
+			<div class="abaixodireita">Inferior direito</div>
+			<div class="centro">Centro</div>
+			<p class="titulos"><a href="index.html">volte a pagina  inicial</a></p>
+		</div>
+	</div>
+</body>
+</html>

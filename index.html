@@ -4,79 +4,62 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Primeiro Site do 1C</title>
-	<style type="text/css">
-		
-		body{
-			background-color: #708090
-
-		}
-
-		h1{
-			text-align: center;
-			color: #fff;
-			font-weight: bolder;
-
-		}
-
-		h2{
-			text-align: left;
-			font-size: 24px;
-
-		}
-
-		p{
-			font-size: 20px;
-			text-align: justify;
-
-		}
-
-		ul li{
-			color: #A020F0;
-			font-weight: bolder;
-			text-decoration: underline;
-
-		}
-
-		ul{
-			font-weight: bolder;
-
-		}
-
-		figure{
-			text-align: center;
-			border: 3px ridge black;
-
-		}
-
-
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.png">
 </head>
 <body>
-	<h1>Introdução ao HTML</h1>
-		<p>HTML (Hyper Text Markup Language) é uma Linguagem de Marcação de Hipertexto utilizada para criação de páginas da Web. Essa é a linguagem que o seu navegador (Browser) decodifica para exibir as páginas. (FERREIRA & EIS, ONLINE, p.7)​</p>
-	<h2>Breve Histórico da evolução do  HTML​</h2>
-		<p>Desde a invenção da web em 1992 por Tim Berners-Lee, a HTML evoluiu a cada versão lançada, sendo a versão mais atual a HTML5. (SILVA, 2011, p.21)</p>
-	<figure>
-		<img src="img/imghtml.png" alt="breve historico de evolucao dos navegadores">
-	</figure>
+	<header class="fixo">
+		<h1><img class="imglogo" src="img/faviconw.png"></h1>
+		<nav class="menu-options">
+			<ul class="ajustes">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="index.html#html">HTML</a></li>
+				<li><a href="index.html#css">CSS</a></li>
+				<li><a href="segunda.html">JavaScript</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<h1 class="titulos">Introdução ao HTML</h1>
+		<div id="html">
+			<p>HTML (Hyper Text Markup Language) é uma Linguagem de Marcação de Hipertexto utilizada para criação de páginas da Web. Essa é a linguagem que o seu navegador (Browser) decodifica para exibir as páginas. (FERREIRA & EIS, ONLINE, p.7)​</p>
+			<h2 class="titulos">Breve Histórico da evolução do  HTML​</h2>
+			<p>Desde a invenção da web em 1992 por Tim Berners-Lee, a HTML evoluiu a cada versão lançada, sendo a versão mais atual a HTML5. (SILVA, 2011, p.21)</p>
+			<figure>
+				<a href="https://www.w3schools.com/html/html_basic.asp"><img class="imgtext" src="img/imghtml.png" alt="breve historico de evolucao dos navegadores" width="500" height="333"></a>
+			</figure>
 
-	<h1>O que é o W3C</h1>
-		<p>O W3C (World Wide Web Consortium), criado em outubro de 1994 por Tim Berners-Lee, é um consórcio internacional formado por empresas, instituições, pesquisadores, desenvolvedores e público em geral. A finalidade desse consórcio é desenvolver a web a seu potencial máximo, criando normas, especificações e padronizações que se aplicam aos mais diversos segmentos e setores da web. (W3C, ONLINE)​</p>
-	<h1>HTML</h1>
-		<ul>
-  			<li>HTML stands for Hyper Text Markup Language</li>
-  			<li>HTML is the standard markup language for creating Web pages</li>
-  			<li>HTML describes the structure of a Web page</li>
-  			<li>HTML consists of a series of elements</li>
-  			<li>HTML elements tell the browser how to display the content</li>
-  			<li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
-		</ul>
-	<h1>What is CSS?</h1>
-		<p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.<br>
-With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
-		<ul>Inline - by using the style attribute inside HTML elements</ul>
-		<ul>Internal - by using a style element in the head section</ul>
-		<ul>External - by using a link element to link to an external CSS file</ul>
+			<h1 class="titulos">O que é o W3C</h1>
+			<p>O W3C (World Wide Web Consortium), criado em outubro de 1994 por Tim Berners-Lee, é um consórcio internacional formado por empresas, instituições, pesquisadores, desenvolvedores e público em geral. A finalidade desse consórcio é desenvolver a web a seu potencial máximo, criando normas, especificações e padronizações que se aplicam aos mais diversos segmentos e setores da web. (W3C, ONLINE)​</p>
+			<h1 class="titulos">HTML</h1>
+			<p>saiba mais sobre o html <a href="https://www.w3schools.com/html/default.asp">aqui</a></p>
+			<ul>
+  				<li>HTML stands for Hyper Text Markup Language</li>
+  				<li>HTML is the standard markup language for creating Web pages</li>
+  				<li>HTML describes the structure of a Web page</li>
+  				<li>HTML consists of a series of elements</li>
+  				<li>HTML elements tell the browser how to display the content</li>
+  				<li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</li>
+			</ul>
+		</div>
+		<div id="css">
+			<h1 class="titulos">What is CSS?</h1>
+			<p>saiba mais sobre o css <a href="https://www.w3schools.com/css/default.asp" target="_blank">aqui</a></p>
+			<p>Cascading Style Sheets (CSS) is used to format the layout of a webpage.<br>With CSS, you can control the color, font, the size of text, the spacing between elements, how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!</p>
+			<ul class="listastexto">
+				<li>Inline - by using the style attribute inside HTML elements</li>
+				<li>Internal - by using a style element in the head section</li>
+				<li>External - by using a link element to link to an external CSS file</li>
+			</ul>
+			<p class="titulos"><a href="segunda.html">SAIBA MAIS SOBRE JAVASCRIPT</a></p>
+			<p class="titulos"><a href="posicionamento.html">SAIBA MAIS SOBRE POSITION</a></p>
+		</div>
+	</div>
+	<footer>
+		<p class="titulos">Rodapé</p>
+	</footer>
 </body>
 </html>
